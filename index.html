@@ -2,17 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Face Maker</title>
 </head>
 <body>
-    
+    <header>
+        <h2>Create an Avatar</h2>
+    </header>
+    <div>
+        <img src="head1.png" alt="head1" id="head">
+        <img src="eyes1.png" alt="eyes1" id="eyes">
+        <img src="mouth1.png" alt="mouth1" id="mouth">
+    </div>
+    <div class="sliders">
+        <label for="head">Head Type</label>
+        <input type="range" id="head" min="1" max="4">
+        <br>
+        <label for="eyes">Eyes</label>
+        <input type="range" id="eyes" min="1" max="4">
+        <br>
+        <label for="mouth">Mouth</label>
+        <input type="range" id="mouth" min="1" max="4">
+    </div>
 
-
+    <p id="value"></p>
 
     <script>
+        // Head slider //
+        var head = document.getElementById("head");
+        var headValue = 0;
+        var dispVal = document.getElementById("value");
+        dispVal.innerHTML = "The JS variable 'headValue' is = " + headValue;
+        
+        setInterval(function() {
+            headValue = head.value;
+            dispVal.innerHTML = "The JS variable 'headValue' is = " + headValue;
 
+        },4)
+
+        // Eye slider //
+        var eyes = document.getElementById("eyes");
+        var eyeValue = 0;
+
+        setInterval(function() {
+            eyeValue = eyes.value;
+        },4)
+
+        // Mouth slider //
+        var mouth = document.getElementById("mouth");
+        var mouthValue = 0;
+
+        setInterval(function() {
+            mouthValue = mouth.value;
+        },4)
     </script>
+
 </body>
 </html>

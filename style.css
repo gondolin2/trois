@@ -1,0 +1,35 @@
+body{
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:aliceblue;
+}
+
+header{
+    background-color: rgb(177, 160, 197);
+    padding:0.3px;
+    color:aliceblue;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-transform:uppercase;
+}
+
+div{
+    position:relative;
+    border: 10px;
+}
+
+img{
+    width:70%;
+    position:absolute;
+    top:0px;
+    left:0px;
+    padding-top:30px;
+    border:5px;
+
+}
+
+.sliders{
+    padding-top:30px;
+    float:right;
+}
