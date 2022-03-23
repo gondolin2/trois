@@ -14,7 +14,7 @@ header{
     text-transform:uppercase;
 }
 
-div{
+.facemaker{
     position:relative;
     border: 10px;
 }
@@ -24,12 +24,12 @@ img{
     position:absolute;
     top:0px;
     left:0px;
-    padding-top:30px;
+    padding-top:45px;
     border:5px;
 
 }
 
 .sliders{
-    padding-top:30px;
+    padding-top:100px;
     float:right;
 }
