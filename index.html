@@ -30,40 +30,32 @@
         <input type="range" id="mouth" min="1" max="4">
     </div>
 
-    <p id="hValue"></p>
-    <p id="eValue"></p>
-    <p id="mValue"></p>
-
     <script>
         
         var head = document.getElementById("head");
         var headValue = 0;
-        var disphVal = document.getElementById("hValue");
-        disphVal.innerHTML = "'headValue' is = " + headValue;
         
-        setInterval(function() {
+        head.addEventListener("change", function() {
             headValue = head.value;
-            disphVal.innerHTML = "'headValue' is = " + headValue;
-            
+
             if (headValue==1)
-                {document.getElementById("headImg").src = "head1.png";}
+                {document.getElementById("headImg").src ="head1.png";}
             if (headValue==2)
-                {document.getElementById("headImg").src = "head2.png";}
+                {document.getElementById("headImg").src ="head2.png";}
             if(headValue==3)
-                {document.getElementById("headImg").src = "head3.png";}
-            if (headValue==4)
-                {document.getElementById("headImg").src = "head4.png";}
-        },4)
+                {document.getElementById("headImg").src ="head3.png";}
+            if(headValue==4)
+                {document.getElementById("headImg").src ="head4.png";}
+        }
+
+        )
 
         
         var eye = document.getElementById("eyes");
         var eyeValue = 0;
-        var dispeVal = document.getElementById("eValue");
-        dispeVal.innerHTML = "'eyeValue' is = " + eyeValue;
-
+        
         eye.addEventListener("change", function() {
             eyeValue = eye.value;
-            dispeVal.innerHTML = "'eyeValue' currently = " + eyeValue;
 
             if (eyeValue==1)
                 {document.getElementById("eyesImg").src ="eyes1.png";}
@@ -81,13 +73,9 @@
         var mouth = document.getElementById("mouth");
         var mouthValue = 0;
 
-        var dispmVal = document.getElementById("mValue");
-        dispmVal.innerHTML = "The JS variable 'eyeValue' is = " + mouthValue;
-
         mouth.addEventListener("change", function() {
             mouthValue = mouth.value;
-            dispmVal.innerHTML = "'mouthValue' currently = " + mouthValue;
-
+            
             if (mouthValue==1)
                 {document.getElementById("mouthImg").src ="mouth1.png";}
             if (mouthValue==2)
