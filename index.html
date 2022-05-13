@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <audio src="ui-sound2.mp3" id="sound"></audio>
     <title>Face Maker</title>
 </head>
 <body>
@@ -33,20 +34,23 @@
 
     <script>
         
+        
         var head = document.getElementById("head");
         var headValue = 0;
-        
+        const x = document.getElementById("sound");
+
         head.addEventListener("change", function() {
             headValue = head.value;
 
             if (headValue==1)
-                {document.getElementById("headImg").src ="head1.png";}
+                {document.getElementById("headImg").src ="head1.png", x.play();
+                }
             if (headValue==2)
-                {document.getElementById("headImg").src ="head2.png";}
+                {document.getElementById("headImg").src ="head2.png", x.play();}
             if(headValue==3)
-                {document.getElementById("headImg").src ="head3.png";}
+                {document.getElementById("headImg").src ="head3.png", x.play();}
             if(headValue==4)
-                {document.getElementById("headImg").src ="head4.png";}
+                {document.getElementById("headImg").src ="head4.png", x.play();}
         }
 
         )
@@ -59,13 +63,13 @@
             eyeValue = eye.value;
 
             if (eyeValue==1)
-                {document.getElementById("eyesImg").src ="eyes1.png";}
+                {document.getElementById("eyesImg").src ="eyes1.png", x.play();}
             if (eyeValue==2)
-                {document.getElementById("eyesImg").src ="eyes2.png";}
+                {document.getElementById("eyesImg").src ="eyes2.png", x.play();}
             if(eyeValue==3)
-                {document.getElementById("eyesImg").src ="eyes3.png";}
+                {document.getElementById("eyesImg").src ="eyes3.png", x.play();}
             if(eyeValue==4)
-                {document.getElementById("eyesImg").src ="eyes4.png";}
+                {document.getElementById("eyesImg").src ="eyes4.png", x.play();}
         }
 
         )
@@ -78,13 +82,13 @@
             mouthValue = mouth.value;
             
             if (mouthValue==1)
-                {document.getElementById("mouthImg").src ="mouth1.png";}
+                {document.getElementById("mouthImg").src ="mouth1.png", x.play();}
             if (mouthValue==2)
-                {document.getElementById("mouthImg").src ="mouth2.png";}
+                {document.getElementById("mouthImg").src ="mouth2.png", x.play();}
             if(mouthValue==3)
-                {document.getElementById("mouthImg").src ="mouth3.png";}
+                {document.getElementById("mouthImg").src ="mouth3.png", x.play();}
             if(mouthValue==4)
-                {document.getElementById("mouthImg").src ="mouth4.png";}
+                {document.getElementById("mouthImg").src ="mouth4.png", x.play();}
         }
 
         )
